@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(196, 124, 124);
+    color: white;
+}
+.image-box{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+input{
+    height: 50px;
+    width: 200px;
+    border-radius: 6px;
+}
+.input-box{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.number-box{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+.replay{
+    display: none;
+}
