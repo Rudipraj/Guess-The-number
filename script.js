@@ -1,4 +1,4 @@
-let secretNumber =  Math.floor(Math.random() * 5);
+let secretNumber =  Math.floor(Math.random() * 6);
 var audio = new Audio('clap.WAV');
 var audio1 = new Audio('wrong.WAV');
 
@@ -35,12 +35,12 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 document.querySelector('.replay').addEventListener('click', function () {
-    secretNumber = Math.floor(Math.random() * 5);
+    secretNumber = Math.floor(Math.random() * 6);
   
     displayMessage('Good Luck!');
     audio.pause();
     audio1.pause();
-    document.querySelector('.guess').value = '';
+    document.querySelector('.guess').value = '0';
     document.querySelector('.replay').style.display="none";
     document.querySelector('.check').style.display="block";
     document.querySelector('body').style.backgroundColor = 'rgb(196, 124, 124)';
@@ -48,4 +48,4 @@ document.querySelector('.replay').addEventListener('click', function () {
     document.querySelector('.number').style.display = "none";
     
   });
-  
+ 

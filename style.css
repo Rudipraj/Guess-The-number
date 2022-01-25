@@ -8,6 +8,7 @@ body{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 input{
     height: 50px;
@@ -22,9 +23,26 @@ align-items: center;
 .number-box{
     height: 50px;
     width: 50px;
-    margin-right: 10px;
-    border-radius: 6px;
+    margin-right: 20px;
+    border-radius: 50%;
+    
 }
 .replay{
     display: none;
 }
+.number-box{
+    animation: rotation 0.5s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+
+ 
+  
