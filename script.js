@@ -1,6 +1,7 @@
 let secretNumber =  Math.floor(Math.random() * 6);
 var audio = new Audio('clap.WAV');
 var audio1 = new Audio('wrong.WAV');
+var audio2 = new Audio('wrong.aac');
 
 
 const displayMessage = function (message) {
@@ -15,6 +16,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
   if (!guess) {
     displayMessage('⛔️ No number!');
+      audio2.play();
   }
   else if (guess === secretNumber) {
     displayMessage('🎉 Correct Number!');
